@@ -1,2 +1,7 @@
 # TCP-SERVER
-C++ HTTP Server
+## C++ HTTP Server
+
+* Features:
+* Multiple paths
+* 404 page
+* No extra libraries
