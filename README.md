@@ -6,13 +6,16 @@ Simple C++ HTTP Server
 - [x] Multiple paths.
 - [x] 404 page
 - [x] No extra libraries
-- [ ] C++ templating for HTML
-
+- [x] Multiple clients
+- [ ] C++ Templating engine for HTML
+- [ ] HTTPs support
 
 # How to compile
 ```
-gcc server.cpp -o server.exe -lws2_32 -lstdc++
+gcc server.cpp -o server.exe -lws2_32 -lstdc++ -Os
 ```
+# C++ - JS Express
+![Screenshot](https://pico.codes/pictures/s6q87ch8tegc8tr.png)
 
 ## Contributing
 
