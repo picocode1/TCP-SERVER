@@ -2,7 +2,7 @@
 
 ### Feature list
 
-- [x] Multiple paths.
+- [x] Multiple paths
 - [x] 404 page
 - [x] No extra HTTP libraries
 - [x] Multiple clients

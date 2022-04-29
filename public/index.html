@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>:root{color-scheme:dark}</style>
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<title>TCP-SERVER</title>
 	</head>
 	<body>
 		<h1>C++ Server default page</h1>
-		<h2>Server path: @path</h2>
-		<a href="/hello">Go to /hello</a>
+		<a href='/hello'>Go to /hello</a><br><br>
+		<a href='/info'>Go to information page</a>
+		<h2>Generate MD5 hash</h2>
+		<input type='text' id='md5' value='abc'>
+		<button id='button' onclick='exec()'>Calculate</button>
+		<script>
+			 let exec = () => { let md5 = document.getElementById('md5'); fetch('/md5', { method: 'POST', body: md5.innerText }).then(function (r) { return r.text() }).then(function (text) { md5.innerText = text }) }
+		</script>
 	</body>
 </html>
