@@ -182,8 +182,6 @@ int main(int argc, char *argv[]){
 		File.close();
 	});
 
-
-
 	WSADATA wsa;
 	SOCKET s, HTTP_SOCKET;
 	struct sockaddr_in server;
